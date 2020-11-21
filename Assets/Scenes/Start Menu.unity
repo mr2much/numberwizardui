@@ -469,7 +469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -303, y: -380}
+  m_AnchoredPosition: {x: -594, y: -384}
   m_SizeDelta: {x: 453.6, y: 161.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1087737909
@@ -592,7 +592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.002494812, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.0024871826, y: -0.0000076293945}
   m_SizeDelta: {x: -0.3999939, y: -0.80000305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1825698457
@@ -772,7 +772,8 @@ MonoBehaviour:
   m_text: 'Halt Mortal! Who goes there? Get ready to be amazed by the Number Wizard!
 
 
-    Pick a number in your head, and prepare to have your brain blown!'
+    Pick a number in your head between 1 and 1000, and prepare to have your brain
+    blown!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -841,12 +842,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1879806235}
-    characterCount: 140
+    characterCount: 159
     spriteCount: 0
-    spaceCount: 27
-    wordCount: 27
+    spaceCount: 31
+    wordCount: 31
     linkCount: 0
-    lineCount: 6
+    lineCount: 7
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
