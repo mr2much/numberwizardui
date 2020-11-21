@@ -21,7 +21,6 @@ public class NumberWizard : MonoBehaviour
     private void ResetGame()
     {        
         CalculateNextGuess();
-        //highestNumber += 1;
     }    
 
     public void OnPressHigher()
