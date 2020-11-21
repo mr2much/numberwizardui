@@ -1,12 +1,14 @@
 ﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NumberWizard : MonoBehaviour
 {
     private string name = "Anubis";
-    [SerializeField] public int highestNumber;
-    [SerializeField] public int lowestNumber;
+    [SerializeField] int highestNumber;
+    [SerializeField] int lowestNumber;
+    [SerializeField] TextMeshProUGUI guessText;
     private int guess;
     private int previousGuess;
 
@@ -17,9 +19,9 @@ public class NumberWizard : MonoBehaviour
     }
 
     private void ResetGame()
-    {
-        highestNumber += 1;        
+    {        
         CalculateNextGuess();
+        highestNumber += 1;
     }    
 
     public void OnPressHigher()
@@ -46,5 +48,7 @@ public class NumberWizard : MonoBehaviour
         {
             previousGuess = guess;
         }
+
+        guessText.text = guess.ToString();
     }
 }
