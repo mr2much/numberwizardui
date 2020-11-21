@@ -21,24 +21,30 @@ public class NumberWizard : MonoBehaviour
     private void ResetGame()
     {        
         CalculateNextGuess();
-        highestNumber += 1;
+        //highestNumber += 1;
     }    
 
     public void OnPressHigher()
     {
-        lowestNumber = guess;
-        CalculateNextGuess();
+        if(guess < highestNumber)
+        {
+            lowestNumber = guess + 1;
+            CalculateNextGuess();
+        }        
     }
 
     public void OnPressLower()
     {
-        highestNumber = guess;
-        CalculateNextGuess();
+        if(guess > lowestNumber)
+        {
+            highestNumber = guess - 1;
+            CalculateNextGuess();
+        }        
     }
 
     private void CalculateNextGuess()
     {
-        guess = (highestNumber + lowestNumber) / 2;
+        guess = Random.Range(lowestNumber, highestNumber + 1);
 
         if (guess == previousGuess)
         {
@@ -46,9 +52,8 @@ public class NumberWizard : MonoBehaviour
         }
         else
         {
-            previousGuess = guess;
+            previousGuess = guess;            
         }
-
         guessText.text = guess.ToString();
     }
 }
